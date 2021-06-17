@@ -1,0 +1,79 @@
+/*
+Estilos da página index.html
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+h1,h2,h3 {
+    background-color: rgb(241, 0, 0);
+    color: black;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+    
+    
+}
+.container {
+    display: flex;
+    flex-flow: row  ;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    
+
+   
+}
+
+#menu li {
+    display: inline;
+    margin: 0 10px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    border: 2px solid rgb(143, 7, 7);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    z-index: -1;
+    transition: .7s ease;
+   
+
+}
+
+#menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#menu li a:hover {
+    color: rgb(3, 3, 3);
+   width: 100%;
+
+}
+
+.mb-40 {
+margin-bottom: 40px ;
+}
+
+.dadosFilme {
+    width: 40vw;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+    
+}
+
+/*
+Estilos da página contato.html
+*/
