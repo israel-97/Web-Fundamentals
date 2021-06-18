@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -19,29 +21,65 @@
         </ul>
     
     </nav>
+<br>
+    <h1 class="center">Entre em contato comigo</h1>
+<br>
+<div class="container">
+    <div>
+        <form>
+            <label for="nome">Nome:</label> <br>
+            <input type="text" id="nome" onkeyup='validaNome()'>
+            <div id = 'txtNome'></div>
+        
+            <br>
+            <label for="email">E-mail:</label> <br>
+            <input type="email" id="email" onkeyup='validaEmail()'>
+            <div id = 'txtEmail'></div>
 
-    <h1>Entre em contato comigo</h1>
+            <br>
+            <label for="assunto">Nome:</label> <br>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id = 'txtAssunto'></div>
+            <br>
+            <br>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+    </div>
+    <div>
+        <br>
+        <h2>Endereço</h2>
+        <br>
+        <p>Rua Terezópolis, 64;</p>
+        <p>Itaquaquecetuba - SP</p>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0233436943613!2d-46.342187884610325!3d-23.495668665055707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7b68e2274c1d%3A0x678f4a84f2d9be76!2sR.%20Terez%C3%B3polis%2C%2064%20-%20Jardim%20Aracare%2C%20Itaquaquecetuba%20-%20SP%2C%2008572-360!5e0!3m2!1spt-BR!2sbr!4v1624030294756!5m2!1spt-BR!2sbr" width="445" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
 
-<form>
-    <label for="nome">Nome:</label> <br>
-    <input type="text" id="nome">
-    <br>
-    <br>
-    <label for="email">E-mail:</label> <br>
-    <input type="email" id="email">
-    <br>
-    <br>
-    <label for="assunto">Nome:</label> <br>
-    <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-    <br>
-    <br>
-    <button>Enviar</button>
-</form>
-    
-<h2>Endereço</h2>
-<p>Rua Terezópolis, 64;</p>
-<p>Itaquaquecetuba - SP</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0233436943613!2d-46.342187884610325!3d-23.495668665055707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7b68e2274c1d%3A0x678f4a84f2d9be76!2sR.%20Terez%C3%B3polis%2C%2064%20-%20Jardim%20Aracare%2C%20Itaquaquecetuba%20-%20SP%2C%2008572-360!5e0!3m2!1spt-BR!2sbr!4v1624030294756!5m2!1spt-BR!2sbr" width="445" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<footer>
+    <div class="container">
+        <a href="https://www.facebook.com/israel.dantas.73">
+            <img class="tm-social" src="assets/img/facebook.png" alt="Logo Facebook">
+        </a>
+        <a href="https://www.instagram.com/israel_dantas97/">
+            <img class="tm-social" src="assets/img/instagram.png" alt="Logo Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/israel-dantas-gerente/">
+            <img class="tm-social" src="assets/img/linkedin.png" alt="Logo Linkedin">
+        </a>
+    </div>
+
+    <p class="center">
+        Todos os direitos reservados: Israel Dantas &copy;
+    </p>
+</footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
